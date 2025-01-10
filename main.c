@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 
 typedef enum { INATIVO, RODANDO, PAUSADO, RESFRIANDO } Estado;
 
@@ -192,7 +193,7 @@ void main(void) {
     resume(create(botao_emergencia, 1024, 20, "Emergencia", 1, &microondas));
     resume(create(resfriamento, 1024, 20, "Resfriamento", 1, &microondas));
     resume(create(programacao_futura, 1024, 20, "Agendamento", 1, &microondas));
-   // resume(create(relogio_cortesia, 1024, 20, "Relogio", 0));
+    resume(create(relogio_cortesia, 1024, 20, "Relogio", 0));
     resume(create(tracao_prato, 1024, 20, "TracaoPrato", 1, &microondas));
     resume(create(luz_interna, 1024, 20, "LuzInterna", 1, &microondas));
     resume(create(ligacao_automatica, 1024, 20, "LigacaoAutomatica", 1, &microondas));
