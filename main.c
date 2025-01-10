@@ -119,9 +119,7 @@ void programacao_futura(struct Microondas *microondas) {
     }
 }
 
-/*
 
-não consegui fazer essa parte funcionar
 
 void relogio_cortesia() {
     while (1) {
@@ -137,7 +135,6 @@ void relogio_cortesia() {
         sleep(5);
     }
 }
-*/
 
 void tracao_prato(struct Microondas *microondas) {
     while (1) {
